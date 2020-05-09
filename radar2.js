@@ -476,8 +476,8 @@ function main() {
             if (!A.C.delayaway || parseInt(A.C.delayaway) < 1)
                 A.C.delayaway = 1;
             delayAway = A.C.delayaway;
-            if (Math.floor(scanDelay * 2 / 1000 / 60)<= delayAway)
-                delayAway = Math.ceil(scanDelay * 2.5 / 1000 / 60);
+            //if (Math.floor(scanDelay * 2 / 1000 / 60)<= delayAway)
+            //    delayAway = Math.ceil(scanDelay * 2.5 / 1000 / 60);
 
             A.I(`radar2 set to flag items away if they are not seen for ${delayAway} minutes`);
 
